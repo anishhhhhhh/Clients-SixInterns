@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+/* header start */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(24, 18, 49, 0.8);
+}
+.parallax{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    z-index: -1;
+}
+.hero{
+    width: 100%;
+}
+nav{
+    padding-top: 20px;
+}
+/* .color{
+    background-color: rgb(31,45,60);
+} */
+.hero .navbar{
+    z-index: 5;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.hero .navLinks{
+    padding-top: 5px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.hero .navLinks a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+.hero .card{
+    /* font-family: 'Roboto', sans-serif; */
+    border-radius: 15px;
+    width: 65%;
+    margin: 80px auto 0 auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    color: white;
+    background-color: rgb(42,36,80, 0.8);
+}
+.header .card h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+}
+.header .subPoints{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.header ul{
+    border-left: 2px solid white;
+}
+.header ul li{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.header ul img{
+    margin-right: 15px;
+}
+.contact{
+    width: 30%;
+}
+.contact .contactDetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+.belowCard{
+    width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: white;
+}
+.belowCard h1{
+    font-family: 'Archivo', sans-serif;
+    padding-bottom: 13px;
+}
+.belowCard span{
+    color: rgb(255,216,0);
+    font-weight: bold;
+}
+.belowCard p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.belowCard button{
+    margin-bottom: 50px;
+}
+/* header end */
+
+
+/* stats start */
+.stats{
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    background-color: white;
+    padding-top: 10px;
+}
+.totalStats{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.stats .col-8{
+    width: 100%;
+    border-left: 8px;
+    margin: 0 auto;
+    border-right: 0px;
+}
+.stats h1{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.stats .tasks{
+    width: 60%;
+    color: white;
+    background-color: rgb(73,190,145);
+}
+.workforce,.cities{
+    border-right: 1px solid rgb(229,233,243);
+}
+
+/* stats end */
+
+/* section services start */
+.services{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    text-align: left;
+}
+.services .heading{
+    width: 65%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.services .heading img{
+    width: 65px;
+    height: 2px;
+}
+.services h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.services .row1 p,.services .row2 p{
+    font-size: 15px;
+    color: rgb(41, 41, 41);
+    font-weight: 400;
+}
+.services h3{
+    font-size: 17px;
+    font-weight: 600;
+}
+.services ul{
+    list-style: none;
+    font-size: 15px;
+    color: rgb(41, 41, 41);
+    font-weight: 400;
+}
+
+.services .card{
+    position: relative;
+    width: 48%;
+    padding: 50px 20px 35px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.services .row1{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.services .row2{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+}
+.services img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+}
+.forMobileDevices{
+    width: 80%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: none;
+    margin: 0 auto 30px auto;
+}
+.forMobileDevices p{
+    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+.forMobileDevices::-webkit-scrollbar {
+    width: 12px;
+}
+
+.forMobileDevices::-webkit-scrollbar-track {
+    border-radius: 3px;
+    padding-top: 10px;
+    background: rgb(221, 219, 219);
+}
+
+.forMobileDevices::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgb(151, 150, 150); 
+}
+
+
+/* section services end */
+
+/* process section start */
+.process{
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.process .heading{
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.process .heading h1{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+}
+.process .heading p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.process .heading img{
+    width: 65px;
+    height: 2px;
+}
+.process img{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    clip: rect(0,100%,600px,0);
+}
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+.process .timeline{
+    color: white;
+    width: 70rem;
+    margin: 0 auto 100px auto;
+    font-family: 'Roboto', sans-serif;
+}
+.process .timeline{
+    display: flex;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+.process .timeline h6{
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(43,175,145);
+    padding-bottom: 15px;
+}
+.process .timeline h4{
+    font-size: 20px;
+    font-weight: 300;
+}
+.process .timeline p{
+    font-size: 15px;
+    font-weight: 200;
+    padding-right: 10px;
+    color: rgb(182, 204, 191);
+    padding-bottom: 10px;
+
+}
+.step1, .step2, .step3, .step4{
+    padding: 15px 25px 20px 8px;
+}
+.process .dot{
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: -3px;
+    margin-top: 10px;
+    z-index: 1;
+
+}
+/* process section end */
+
+/* section why starts */
+.why{
+    background-color: rgb(247,252,255);
+    padding-bottom: 200px;
+} 
+.why .title{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+.why .title h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 90px;
+}
+.why .title img{
+    padding-bottom: 80px;
+}
+.why .cards{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 390px;
+}
+.why .tickTok{
+    display: flex;
+    width: 50%;
+}
+.cardhead{
+    padding: 40px 10px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+
+}
+.why .cardhead h5{
+    font-size: 18px;
+}
+.why .subPoints{
+    padding: 15px;
+}
+.why .subPoints p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+.why .subPoint{
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(224, 221, 221);
+}
+.why .features{
+    width: 280px;
+}
+.why .features .subPoints{
+    display: flex;
+    flex-direction: column;
+}
+.why .tickTok .card{
+    width: 100%;
+}
+.why .card{
+    text-align: center;
+    width: 280px;
+}
+.why .sixInterns{
+    transform: scale(1.08);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+}
+.why .sixInterns .cardhead{
+    padding-bottom: 47px;
+}
+
+/* section why ends */
+
+
+/* mobileContainer start */
+.mobileContainer{
+    display: none;
+}
+.mobileContainer .cards{
+    display: flex;
+}
+.mobileContainer .tickTok{
+    width: 150px;
+    overflow: auto;
+    white-space: nowrap;
+}
+.mobileContainer .tickTok .card{
+    display: inline-block;
+    text-align: center;
+}
+.mobileContainer .mobilehead{
+    padding: 10px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+
+}
+.mobileContainer .mobilehead h5{
+    font-size: 13px;
+}
+.mobileContainer .mobilesubPoint{
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(224, 221, 221);
+}
+.mobileContainer .mobilesubPoints p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+.mobileContainer .mobilesubPoints{
+    padding: 15px;
+}
+
+.mobileContainer .tickTok::-webkit-scrollbar {
+    width: 12px;
+}
+
+.mobileContainer .tickTok::-webkit-scrollbar-track {
+    border-radius: 3px;
+    padding-top: 10px;
+    background: rgb(221, 219, 219);
+}
+
+.mobileContainer .tickTok::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgb(151, 150, 150); 
+}
+.mobileContainer .features{
+    background-color: rgb(247,252,255);
+}
+
+/* mobileContainer end */
+
+
+/* section clients start */
+#clients{
+    width: 100%;
+    background-color: white;
+}
+.clients{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.clients .images{
+    display: flex;
+    flex-direction: column;
+}
+.zypp{
+    width: 130px;
+}
+.local{
+    height: 120px;
+    width: 120px;
+}
+.clients .images img{
+    width: 150px;
+}
+.clients .images1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.clients .images2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.clients .title{
+    font-family: 'Roboto', sans-serif;
+}
+.clients .title h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.clients .title p{
+    font-size: 17px;
+}
+/* section clients start */
+
+
+/* section contact start */
+#contact .title{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.contact{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+.contact input{
+    padding: 5px 10px 5px 5px ;
+    font-size: 13px;
+}
+.contact h6{
+    font-size: 14px;
+}
+.contact .subhead{
+    padding-top: 30px;
+}
+.contact .name input,.contact .cName input,.contact .cEmail input,.contact .number input{
+    width: 80%;
+}
+.contact .domain .dName{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.contact .domain .dName p{
+    padding-top: 15px;
+    font-size: 14px;
+}
+.contact .domain h6{
+    margin-bottom: 0;
+}
+.contact button{
+    font-size: 13px;
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    padding: 10px 40px 10px 40px;
+}
+.contact .textarea{
+    padding-top: 35px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.contact .textarea textarea{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 13px;
+    width: 100%;
+    height: 150px;
+}
+.contact .textarea button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.contact .heading{
+    padding-top: 30px;
+}
+/* section contact end */
+
+
+
+@media scren and (max-width:1260px){
+    .why .cards{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1140px){
+    
+    .process .timeline{
+        width: 100%;
+    }
+    
+    .why .sixInterns{
+        transform: scale(1);
+    }
+    
+}
+@media screen and (max-width:770px){
+
+
+    .services .row1, .services .row2{
+        width: 90%;
+    }
+    .mobileContainer{
+        display: inherit;
+    }
+    .why .cards{
+        display: none;
+    }
+    /* .why{
+        background-color: transparent;
+    } */
+
+}
+
+@media screen and (max-width:700px){
+
+    .hero .navLinks{
+        display: none;
+    }
+    .header{
+        background-color: rgb(24, 18, 49);
+    }
+    .hero .card{
+        width: 100%;
+    }
+    .parallax{
+        width: 0;
+        height: 0;
+    }
+    .belowCard{
+        width: 100%;
+    }
+    .process .heading{
+        padding-top: 10%;
+    }
+    .process .timeline{
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-left: 1px solid white;
+        width: 90%;
+        padding-left: 20px;
+    }
+    .process .dot{
+        display: none;
+    }
+    .process{
+        background-color: rgb(22,31,43);
+    }
+    .step1::before,.step2::before,.step3::before,.step4::before{
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        left: -5px;
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:640px){
+
+}
+
+@media screen and (max-width:550px){
+    .why .features{
+        text-align: left;
+    }
+    .why .subPoints p{
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width:470px){
+
+    
+    .hero .card{
+        width: 90%;
+    }
+    .header .card h1{
+        font-size: 20px;
+    }
+    .header ul li{
+        font-size: 15px;
+    }
+    .hero .navbar{
+        width: 100%;
+    }
+    .contact .contactDetails{
+        flex-direction: column;
+    }
+
+    .belowCard{
+        width: 90%;
+    }
+    .belowCard h1{
+        font-size: 35px;
+    }
+    .belowCard p{
+        font-size: 15px;
+    }
+    .stats h1{
+        font-size: 20px;
+    }
+
+    .process{
+        padding-bottom: 0;
+        margin-top: 40px;
+    }
+    .forMobileDevices{
+        display: flex;
+    }
+    .process .heading{
+        margin-right: 30%;
+    }
+    .why{
+        background-color: white;
+        padding-bottom: 0;
+    }
+    .why .title{
+        margin-left: 0;
+        width: 100%;
+    }
+    .why .title img{
+        padding-bottom: 10px;
+    }
+    .why .title h3{
+        font-size: 28px;
+    }
+    .services .row1, .services .row2{
+        display: none;
+    }
+    .services .card{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mobileContainer .tickTok{
+        width: 50%;
+    }
+    .clients .images img{
+        width: 60px;
+    }
+    .local{
+        height: 60px;
+        width: 60px;
+    }
+    .clients{
+        width: 90%;
+    }
+
+
+
+}
+@media screen and (max-width:380px){
+    .contact .domain .dName{
+        display: inherit;
+    }
+
+}
+@media screen and (min-width:700px){
+    .mobileCard{
+        display: none;
+    }
+}
